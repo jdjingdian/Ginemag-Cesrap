@@ -11,14 +11,33 @@
 		390C2C0427327A6D00D1D83A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C2C0327327A6D00D1D83A /* ContentView.swift */; };
 		390C2C0627327A6F00D1D83A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390C2C0527327A6F00D1D83A /* Assets.xcassets */; };
 		390C2C0927327A6F00D1D83A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390C2C0827327A6F00D1D83A /* Preview Assets.xcassets */; };
+		390C2C1227327B7E00D1D83A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C2C1127327B7E00D1D83A /* Misc.swift */; };
+		390C2C1427327FEF00D1D83A /* ParsecSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */; };
+		390C2C1527327FEF00D1D83A /* ParsecSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		390C2C1627327FEF00D1D83A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				390C2C1527327FEF00D1D83A /* ParsecSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		390C2BFE27327A6D00D1D83A /* Ginemag Cesrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ginemag Cesrap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		390C2BFE27327A6D00D1D83A /* Gnimag Cesrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gnimag Cesrap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		390C2C0127327A6D00D1D83A /* Ginemag_CesrapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ginemag_CesrapApp.swift; sourceTree = "<group>"; };
 		390C2C0327327A6D00D1D83A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		390C2C0527327A6F00D1D83A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390C2C0827327A6F00D1D83A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParsecSDK.framework; sourceTree = SOURCE_ROOT; };
+		390C2C1127327B7E00D1D83A /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390C2C1427327FEF00D1D83A /* ParsecSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,7 +55,7 @@
 		390C2BF527327A6D00D1D83A = {
 			isa = PBXGroup;
 			children = (
-				390C2C0027327A6D00D1D83A /* Ginemag Cesrap */,
+				390C2C0027327A6D00D1D83A /* Gnimag Cesrap */,
 				390C2BFF27327A6D00D1D83A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +63,22 @@
 		390C2BFF27327A6D00D1D83A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				390C2BFE27327A6D00D1D83A /* Ginemag Cesrap.app */,
+				390C2BFE27327A6D00D1D83A /* Gnimag Cesrap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		390C2C0027327A6D00D1D83A /* Ginemag Cesrap */ = {
+		390C2C0027327A6D00D1D83A /* Gnimag Cesrap */ = {
 			isa = PBXGroup;
 			children = (
 				390C2C0127327A6D00D1D83A /* Ginemag_CesrapApp.swift */,
 				390C2C0327327A6D00D1D83A /* ContentView.swift */,
+				390C2C1127327B7E00D1D83A /* Misc.swift */,
+				390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */,
 				390C2C0527327A6F00D1D83A /* Assets.xcassets */,
 				390C2C0727327A6F00D1D83A /* Preview Content */,
 			);
-			path = "Ginemag Cesrap";
+			path = "Gnimag Cesrap";
 			sourceTree = "<group>";
 		};
 		390C2C0727327A6F00D1D83A /* Preview Content */ = {
@@ -70,21 +92,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		390C2BFD27327A6D00D1D83A /* Ginemag Cesrap */ = {
+		390C2BFD27327A6D00D1D83A /* Gnimag Cesrap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 390C2C0C27327A6F00D1D83A /* Build configuration list for PBXNativeTarget "Ginemag Cesrap" */;
+			buildConfigurationList = 390C2C0C27327A6F00D1D83A /* Build configuration list for PBXNativeTarget "Gnimag Cesrap" */;
 			buildPhases = (
 				390C2BFA27327A6D00D1D83A /* Sources */,
 				390C2BFB27327A6D00D1D83A /* Frameworks */,
 				390C2BFC27327A6D00D1D83A /* Resources */,
+				390C2C1627327FEF00D1D83A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Ginemag Cesrap";
+			name = "Gnimag Cesrap";
 			productName = "Ginemag Cesrap";
-			productReference = 390C2BFE27327A6D00D1D83A /* Ginemag Cesrap.app */;
+			productReference = 390C2BFE27327A6D00D1D83A /* Gnimag Cesrap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 390C2BF927327A6D00D1D83A /* Build configuration list for PBXProject "Ginemag Cesrap" */;
+			buildConfigurationList = 390C2BF927327A6D00D1D83A /* Build configuration list for PBXProject "Gnimag Cesrap" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				390C2BFD27327A6D00D1D83A /* Ginemag Cesrap */,
+				390C2BFD27327A6D00D1D83A /* Gnimag Cesrap */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390C2C1227327B7E00D1D83A /* Misc.swift in Sources */,
 				390C2C0427327A6D00D1D83A /* ContentView.swift in Sources */,
 				390C2C0227327A6D00D1D83A /* Ginemag_CesrapApp.swift in Sources */,
 			);
@@ -203,6 +227,8 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -258,6 +284,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -268,13 +295,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ginemag Cesrap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/Gnimag Cesrap/Preview Content\"";
 				DEVELOPMENT_TEAM = BR63YT2EJJ;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -282,8 +314,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.magicdian.Ginemag-Cesrap";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.magicdian.Gnimag-Cesrap";
+				PRODUCT_NAME = "Gnimag Cesrap";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,13 +329,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Ginemag Cesrap/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"$(SRCROOT)/Gnimag Cesrap/Preview Content\"";
 				DEVELOPMENT_TEAM = BR63YT2EJJ;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,8 +348,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.magicdian.Ginemag-Cesrap";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.magicdian.Gnimag-Cesrap";
+				PRODUCT_NAME = "Gnimag Cesrap";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		390C2BF927327A6D00D1D83A /* Build configuration list for PBXProject "Ginemag Cesrap" */ = {
+		390C2BF927327A6D00D1D83A /* Build configuration list for PBXProject "Gnimag Cesrap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				390C2C0A27327A6F00D1D83A /* Debug */,
@@ -331,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		390C2C0C27327A6F00D1D83A /* Build configuration list for PBXNativeTarget "Ginemag Cesrap" */ = {
+		390C2C0C27327A6F00D1D83A /* Build configuration list for PBXNativeTarget "Gnimag Cesrap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				390C2C0D27327A6F00D1D83A /* Debug */,
