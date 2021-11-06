@@ -31,3 +31,6 @@ GNIMAG CESRAP是PARSEC GAMING的第三方客户端，使用Swift + SwiftUI编写
 
    
 
+## 感谢
+
+非常感谢[@Zoran Tepša](https://github.com/ztepsa])在issue中耐心解答我的问题，起初我对如何把sdk中渲染的画面通过opengl渲染出来感到非常困惑，如果没有他的帮助，我可能会很久很久都不知道要怎么办。

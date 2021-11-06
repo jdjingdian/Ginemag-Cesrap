@@ -14,6 +14,8 @@
 		390C2C1227327B7E00D1D83A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C2C1127327B7E00D1D83A /* Misc.swift */; };
 		390C2C1427327FEF00D1D83A /* ParsecSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */; };
 		390C2C1527327FEF00D1D83A /* ParsecSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3964137A2736957B00FE0E2E /* ParsecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396413792736957B00FE0E2E /* ParsecView.swift */; };
+		3964137C2736A2AA00FE0E2E /* ParsecClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3964137B2736A2AA00FE0E2E /* ParsecClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,8 @@
 		390C2C0827327A6F00D1D83A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParsecSDK.framework; sourceTree = SOURCE_ROOT; };
 		390C2C1127327B7E00D1D83A /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		396413792736957B00FE0E2E /* ParsecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsecView.swift; sourceTree = "<group>"; };
+		3964137B2736A2AA00FE0E2E /* ParsecClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsecClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				390C2C0127327A6D00D1D83A /* Ginemag_CesrapApp.swift */,
 				390C2C0327327A6D00D1D83A /* ContentView.swift */,
+				396413792736957B00FE0E2E /* ParsecView.swift */,
+				3964137B2736A2AA00FE0E2E /* ParsecClient.swift */,
 				390C2C1127327B7E00D1D83A /* Misc.swift */,
 				390C2C0F27327ABE00D1D83A /* ParsecSDK.framework */,
 				390C2C0527327A6F00D1D83A /* Assets.xcassets */,
@@ -162,6 +168,8 @@
 			files = (
 				390C2C1227327B7E00D1D83A /* Misc.swift in Sources */,
 				390C2C0427327A6D00D1D83A /* ContentView.swift in Sources */,
+				3964137A2736957B00FE0E2E /* ParsecView.swift in Sources */,
+				3964137C2736A2AA00FE0E2E /* ParsecClient.swift in Sources */,
 				390C2C0227327A6D00D1D83A /* Ginemag_CesrapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
