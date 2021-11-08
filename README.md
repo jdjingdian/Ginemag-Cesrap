@@ -4,6 +4,12 @@
 
 GNIMAG CESRAP是PARSEC GAMING的第三方客户端，使用Swift + SwiftUI编写，因为官方一直不释放iOS版本，所以有了这个项目。
 
+## 获取Session ID
+
+> 参考官方获取sessionID方式，我是用curl命令获取的，蛮方便的
+>
+> https://github.com/parsec-cloud/parsec-sdk/tree/master/api/personal
+
 ## Parsec SDK运行流程
 
 1. `ParsecSetLogCallback`从SDK读取Log，获取DEBUG信息
