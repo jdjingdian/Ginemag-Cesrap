@@ -60,6 +60,25 @@ final class ParsecViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func pressesBegan(_ presses: Set<UIPress>,
+                               with event: UIPressesEvent?) {
+        super.pressesBegan(presses, with: event)
+        for press in presses {
+            print("key: \(String(describing: press.key?.characters))")
+            parsec.keyboardMsg(keycode: UInt32(press.key?.keyCode.rawValue ?? 0), pressed: true)
+        }
+    }
+    
+    override func pressesEnded(_ presses: Set<UIPress>,
+                                   with event: UIPressesEvent?) {
+            super.pressesEnded(presses, with: event)
+        for press in presses {
+            print("key: \(String(describing: press.key?.characters))")
+            parsec.keyboardMsg(keycode: UInt32(press.key?.keyCode.rawValue ?? 0), pressed: false)
+        }
+        }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         print("Parsec setup...")
@@ -71,7 +90,7 @@ final class ParsecViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        parsec.destroy()
+        parsec.destory()
         print("Parsec destroyed.")
     }
     
